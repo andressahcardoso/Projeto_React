@@ -3,9 +3,7 @@ import { FooterContainer } from "./styled";
 function Footer() {
     return (
         <FooterContainer>
-            {}
-            <h4>Oiiiii eu sou o footer!</h4>
-            {}
+            <h4>Ensino Médio - SENAC</h4>
         </FooterContainer>
     )
 }

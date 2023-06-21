@@ -5,7 +5,6 @@ function Header() {
         <HeaderContainer>
             <h1>Video</h1>
             <input type="text" placeholder="Busca" id="campoDeBusca"></input>
-            {}
         </HeaderContainer>
     )
 }

@@ -7,6 +7,10 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
+    hr {
+        border-color: #20B2AA;
+    }
 `
 
 export const TelaInteira = styled.div`
@@ -16,14 +20,16 @@ export const TelaInteira = styled.div`
 `
 
 export const ContainerMain = styled.div`
-    min-height: 95vh;
+    min-height: 80vh;
     display: flex;
 `
 
 export const PainelVideos = styled.section`
-    width: 86vw;
+    width: 85.5vw;
     height: 80vh;
-    background-color: pink;
+    padding-top: 2vh;
+    padding-left: 1.5;
+    padding-right: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
