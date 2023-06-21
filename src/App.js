@@ -1,8 +1,9 @@
 import "./styled.css"
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Menu from "./components/Menu/Menu";
+import Nav from "./components/Nav/Nav";
 import HomePage from "./components/Pages/Home/HomePage";
+import StyledGlobal, { ContainerMain, PainelVideos, TelaInteira } from "./styledGlobal";
 
 function App() {
 
@@ -11,19 +12,21 @@ function App() {
   }
 
   return (
-    <body>
-    <div class="tela-inteira">
-        
-        <Header/>
+   <>
+    <StyledGlobal/>
 
-        <main>
-            <Menu/>
-            <HomePage reproduz={reproduzVideo} />
-        </main>
+    <TelaInteira>
+      <Header/>
+      <ContainerMain>
+        <Nav/>
+        <PainelVideos>
+          <HomePage reproduz={reproduzVideo} />
+        </PainelVideos>
+      </ContainerMain>
+      <Footer/>
+    </TelaInteira>
 
-        <Footer/>
-    </div>
-</body>
+   </>
   );
 }
 

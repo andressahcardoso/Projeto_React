@@ -1,43 +1,60 @@
+import Video from '../../Videos/Videos'
 
-function HomePage(reproduzProps) {
+function HomePage(props) {
 
-    console.log('------', reproduzProps)
+    console.log('Exemplo de utilização - Props', props)
 
     return(
          
         <section class="painel-de-videos">
-        <div class="box-pagina-principal media1" reproduz={reproduzProps.reproduz}>
-            <img src="https://picsum.photos/400/400?a=1 " alt=""></img>
-            <h4>Título do vídeo</h4>
-        </div>
-        <div class="box-pagina-principal media2" reproduz={reproduzProps.reproduz}>
-            <img src="https://picsum.photos/400/400?a=2 " alt=""></img>
-            <h4>Título do vídeo</h4>
-        </div>
-        <div class="box-pagina-principal media3" reproduz={reproduzProps.reproduz}>
-            <img src="https://picsum.photos/400/400?a=3 " alt=""></img>
-            <h4>Título do vídeo</h4>
-        </div>
-        <div class="box-pagina-principal media4" reproduz={reproduzProps.reproduz}>
-            <img src="https://picsum.photos/400/400?a=4 " alt=""></img>
-            <h4>Título do vídeo</h4>
-        </div>
-        <div class="box-pagina-principal media5"reproduz={reproduzProps.reproduz}>
-            <img src="https://picsum.photos/400/400?a=5 " alt=""></img>
-            <h4>Título do vídeo</h4>
-        </div>
-        <div class="box-pagina-principal media6" reproduz={reproduzProps.reproduz}>
-            <img src="https://picsum.photos/400/400?a=6 " alt=""></img>
-            <h4>Título do vídeo</h4>
-        </div>
-        <div class="box-pagina-principal media7" reproduz={reproduzProps.reproduz}>
-            <img src="https://picsum.photos/400/400?a=7 " alt=""></img>
-            <h4>Título do vídeo</h4>
-        </div>
-        <div class="box-pagina-principal media8" reproduz={reproduzProps.reproduz}>
-            <img src="https://picsum.photos/400/400?a=8 " alt=""></img>
-            <h4>Título do vídeo</h4>
-        </div>
+            <Video
+                reproduz={props.reproduz}
+                link={"https://picsum.photos/400/400?a=1"} 
+                titulo={"Título do vídeo"}
+            />
+
+            <Video
+                reproduz={props.reproduz}
+                link={"https://picsum.photos/400/400?a=2"} 
+                titulo={"Título do vídeo"}
+            />
+
+            <Video
+                reproduz={props.reproduz}
+                link={"https://picsum.photos/400/400?a=3"} 
+                titulo={"Título do vídeo"}
+            />
+
+            <Video
+                reproduz={props.reproduz}
+                link={"https://picsum.photos/400/400?a=4"} 
+                titulo={"Título do vídeo"}
+            />
+
+            <Video
+                reproduz={props.reproduz}
+                link={"https://picsum.photos/400/400?a=5"} 
+                titulo={"Título do vídeo"}
+            />
+
+            <Video
+                reproduz={props.reproduz}
+                link={"https://picsum.photos/400/400?a=6"} 
+                titulo={"Título do vídeo"}
+            />
+
+            <Video
+                reproduz={props.reproduz}
+                link={"https://picsum.photos/400/400?a=7"} 
+                titulo={"Título do vídeo"}
+            />
+
+            <Video
+                reproduz={props.reproduz}
+                link={"https://picsum.photos/400/400?a=8"} 
+                titulo={"Título do vídeo"}
+            />
+                   
         </section>
     )
 }

@@ -1,10 +1,12 @@
-// import './App.css';
+import { FooterContainer } from "./styled";
 
 function Footer() {
     return (
-        <>
-            <h4>Oi! Eu moro no footer!</h4>
-        </>
+        <FooterContainer>
+            {}
+            <h4>Oiiiii eu sou o footer!</h4>
+            {}
+        </FooterContainer>
     )
 }
 
